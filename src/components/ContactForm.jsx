@@ -43,7 +43,7 @@ const handleSubmit = (e) => {
             <Paper sx={{ p: 6, mt: 4 }}>
             <form onSubmit={handleSubmit}>
             <Box display="flex" flexDirection="column" gap={3}>
-                // Campo de nombre
+                Nombre
                 <TextField label="Nombre" fullWidth
                     name="nombre"
                     value={formData.nombre}
@@ -51,7 +51,7 @@ const handleSubmit = (e) => {
                     error={!!errors.nombre}
                     helperText={errors.nombre}
                     required/>
-                // Campo de correo electrónico
+                Correo electrónico
                 <TextField
                     label="Correo electrónico"fullWidth
                     name="correo"
@@ -61,7 +61,7 @@ const handleSubmit = (e) => {
                     error={!!errors.correo}
                     helperText={errors.correo}
                     required/>
-                // Campo de asunto
+                Asunto
                 <TextField label="Asunto"fullWidth select
                     name="asunto"
                     value={formData.asunto}
@@ -69,13 +69,13 @@ const handleSubmit = (e) => {
                     error={!!errors.asunto}
                     helperText={errors.asunto}
                     required>
-                // Opciones de asunto
+                Opciones de asunto
                     <MenuItem value="consulta">Consulta</MenuItem>
                     <MenuItem value="felicitacion">Felicitación</MenuItem>
                     <MenuItem value="reclamo">Reclamo</MenuItem>
                     <MenuItem value="otro">Otro</MenuItem>
                 </TextField>
-                // Campo de mensaje
+                Dejenos un mensaje
                 <TextField
                     label="Mensaje"
                     fullWidth
